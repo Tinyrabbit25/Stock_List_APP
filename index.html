@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock List</title>
+  <link rel="stylesheet" href="Style.css">
+</head>  
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1> 
+      <span class="Half-yellow">Stock</span> 
+      <span class="Half-red">list</span> 
+      <span class="Warm-blue">[ALPHA]</span>
+    </h1>
+  </header>
+
+  <!-- Stock Input Card -->
+  <div class="Card" id="stockForm"> 
+    <header>
+      <h3 class="S">Syrups (C)</h3>   
+    </header>
+
+    <!-- Vanilla Syrup -->
+    <div class="SyrupRow" data-label="Vanilla Syrup">
+      <label class="Syrup">Vanilla Syrup</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <span>0</span>
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    <!-- SF Vanilla Syrup -->
+    <div class="SyrupRow" data-label="SF Vanilla Syrup">
+      <label class="Syrup">SF Vanilla Syrup</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <span>0</span>
+        <button type="button">+</button>
+      </div>
+    </div>
+    
+    <!-- Caramel Syrup -->
+     <div class ="SyrupRow" data-label="Caramel Syrup">
+      <label class ="Syrup"> Caramel Syrup </label>
+      <div class ="Quantity">
+        <button type ="button">-</button>
+        <span>0</span>
+        <button type="button">+</button>
+      </div>
+    </div>
+
+
+    <!----Liquid Sugar---->
+      <div class ="SyrupRow" data-label="Liquid Sugar">
+      <label class = "Syrup"> Liquid Sugar </label>
+      <div class ="Quantity">
+        <button type ="button">-</button>
+        <span>0</span>
+        <button type="button">+</button>
+     </div>
+   </div>
+
+    <!-- Submit Button -->
+<button id="submitBtn">Submit list</button>
+<button id ="refreshBtn" style = "margin-top: 6px; list-style: none; padding-left: 0;"> Refresh list</button>
+<button id="updateBtn" style="display: none;">Update List</button>
+<ul id="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
+
+</div> 
+  <!-- JavaScript -->
+  <script src="Script.js"></script>
+</body>
+</html>
