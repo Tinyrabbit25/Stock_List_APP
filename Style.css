@@ -64,6 +64,28 @@ h1{
     transition: 0.4s ease-in-out;
 }
 
+.Quantity{
+  display: flex;
+  align-items:baseline center;
+}
+
+.Quantity input[type="number"] { /* Manual input type */
+  width: 36px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  height: 25px;
+  margin: 0 6px;
+  border-radius: 4px;
+  padding: 2px 5px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+   margin:0;
+}
+
 /* Colors for Title */
 .Half-red{
     color: var(--text-color);
