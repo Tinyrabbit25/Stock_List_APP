@@ -17,65 +17,120 @@
     </h1>
   </header>
 
-  <!-- Stock Input Card -->
-  <div class="Card" id="stockForm"> 
-    <header>
-      <h3 class="S">Syrups (C)</h3>   
-    </header>
+  <!-------Card container----->
+  <div class="card-container">
 
-    <!-- Vanilla Syrup -->
-    <div class="SyrupRow" data-label="Vanilla Syrup">
-      <label class="Syrup">Vanilla Syrup</label>
-      <div class="Quantity"> 
-        <button type="button">-</button>
-        <!-- 🆕 NEW: Replace span with input[type=number] -->
-        <input type="number" value="" min="0" />
-        <button type="button">+</button>
+    <!-- Stock Input Card -->
+    <div class="Card" id="stockForm"> 
+      <header>
+        <h3 class="S">Syrups (C)</h3>   
+      </header>
+
+      <!-- Vanilla Syrup -->
+      <div class="SyrupRow" data-label="Vanilla Syrup">
+        <label class="Syrup">Vanilla Syrup</label>
+        <div class="Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
       </div>
+
+      <!-- SF Vanilla Syrup -->
+      <div class="SyrupRow" data-label="SF Vanilla Syrup">
+        <label class="Syrup">SF Vanilla Syrup</label>
+        <div class="Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Caramel Syrup -->
+      <div class="SyrupRow" data-label="Caramel Syrup">
+        <label class="Syrup">Caramel Syrup</label>
+        <div class="Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Liquid Sugar -->
+      <div class="SyrupRow" data-label="Liquid Sugar">
+        <label class="Syrup">Liquid Sugar</label>
+        <div class="Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <button class="submitBtn">Submit list</button>
+      <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
+      <button class="updateBtn" style="display: none;">Update List</button>
+
+      <!-- Checklist will show here -->
+      <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
     </div>
 
-    <!-- SF Vanilla Syrup -->
-    <div class="SyrupRow" data-label="SF Vanilla Syrup">
-      <label class="Syrup">SF Vanilla Syrup</label>
-      <div class="Quantity"> 
-        <button type="button">-</button>
-        <!-- 🆕 NEW -->
-        <input type="number" value="" min="0" />
-        <button type="button">+</button>
+    <!------Mixes Card-------->
+    <div class="Card2" id="Stockform2">
+      <header>
+        <h3 class="S2"> Mixes (F,S) </h3>
+      </header>
+
+      <!-- Mocha Mix -->
+      <div class="MixesRow" data-label="Mocha Mix">
+        <label class="Mixes">Mocha Mix</label>
+        <div class="Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
       </div>
+
+      <!-- Caramel Mix -->
+      <div class="MixesRow" data-label="Caramel Mix">
+        <label class="Mixes">Caramel Mix</label>
+        <div class="Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Strawberry Mix -->
+      <div class="MixesRow" data-label="Straw-bana Mix">
+        <label class="Mixes">Straw-bana Mix</label>
+        <div class="Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Mango-pine Mix -->
+      <div class="MixesRow" data-label="Mango-pine Mix">
+        <label class="Mixes">Mango-pine Mix</label>
+        <div class="Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <button class="submitBtn">Submit list</button>
+      <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
+      <button class="updateBtn" style="display: none;">Update List</button>
+
+      <!-- Checklist will show here -->
+      <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
     </div>
 
-    <!-- Caramel Syrup -->
-    <div class="SyrupRow" data-label="Caramel Syrup">
-      <label class="Syrup">Caramel Syrup</label>
-      <div class="Quantity"> 
-        <button type="button">-</button>
-        <!-- 🆕 NEW -->
-        <input type="number" value="" min="0" />
-        <button type="button">+</button>
-      </div>
-    </div>
-
-    <!-- Liquid Sugar -->
-    <div class="SyrupRow" data-label="Liquid Sugar">
-      <label class="Syrup">Liquid Sugar</label>
-      <div class="Quantity"> 
-        <button type="button">-</button>
-        <!-- 🆕 NEW -->
-        <input type="number" value="" min="0" />
-        <button type="button">+</button>
-      </div>
-    </div>
-
-    <!-- Buttons -->
-    <button id="submitBtn">Submit list</button>
-    <button id="refreshBtn" style="margin-top: 6px;">Refresh list</button>
-    <button id="updateBtn" style="display: none;">Update List</button>
-
-    <!-- Checklist will show here -->
-    <ul id="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
-
-  </div> 
+  </div> <!---card-container-->
 
   <!-- JavaScript -->
   <script src="Script.js"></script>
