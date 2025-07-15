@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Select all cards (both syrup and mixes)
-  const cards = document.querySelectorAll(".Card, .Card2");
+  const cards = document.querySelectorAll(".Card, .Card2, .Card3, .Card4");
 
   cards.forEach(card => {
-    const rows = card.querySelectorAll(".SyrupRow, .MixesRow"); // Rows inside this card
+    const rows = card.querySelectorAll(".SyrupRow, .MixesRow, .MisRow, .MisRow2"); // Rows inside this card
     const submitBtn = card.querySelector(".submitBtn");
     const refreshBtn = card.querySelector(".refreshBtn");
     const updateBtn = card.querySelector(".updateBtn");
@@ -95,3 +95,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
