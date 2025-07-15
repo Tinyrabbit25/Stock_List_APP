@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Stock List</title>
   <link rel="stylesheet" href="Style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Chewy&family=Fredoka+One&display=swap" rel="stylesheet">
 </head>  
 <body>
 
@@ -17,10 +19,25 @@
     </h1>
   </header>
 
+  <div class="confetti-wrapper">
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+  <div class="confetti"></div>
+</div>
+
+
   <!-------Card container----->
   <div class="card-container">
+  
 
-    <!-- Stock Input Card -->
+    <!-- Sryups Card -->
     <div class="Card" id="stockForm"> 
       <header>
         <h3 class="S">Syrups (C)</h3>   
@@ -73,12 +90,12 @@
 
       <!-- Checklist will show here -->
       <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
-    </div>
+    </div> <!--End of Syrups Card-->
 
     <!------Mixes Card-------->
     <div class="Card2" id="Stockform2">
       <header>
-        <h3 class="S2"> Mixes (F,S) </h3>
+        <h3 class="M"> Mixes (F,S) </h3>
       </header>
 
       <!-- Mocha Mix -->
@@ -128,9 +145,122 @@
 
       <!-- Checklist will show here -->
       <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
-    </div>
+    </div> <!--End of Mixes Card-->
 
-  </div> <!---card-container-->
+    <!--Miscellaneous Card-->
+    <div class = "Card3" id ="stockform3">
+      <header>
+        <h3 Class = "Mis"> Miscellaneous</h3>
+      </header>
+
+
+      <div class = "MisRow" data-label = "Sundae Lids">
+        <label class = "Miscellaneous"> Sundae lids </label>
+        <div class = "Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <div class = "MisRow" data-label = "Sundae Cups">
+        <label class = "Miscellaneous"> Sundae Cups  </label>
+        <div class = "Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <div class = "MisRow" data-label = "Dome Lids">
+        <label class = "Miscellaneous"> Dome lids </label>
+        <div class = "Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+      
+       <div class = "MisRow" data-label = "Cone">
+        <label class = "Miscellaneous"> Cone</label>
+        <div class = "Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <button class="submitBtn">Submit list</button>
+      <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
+      <button class="updateBtn" style="display: none;">Update List</button>
+
+      <!-- Checklist will   show here -->
+      <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
+    </div> <!--End of Misc Card-->
+
+      <div class = "Card4" id ="stockform4">
+      <header>
+        <h3 Class = "Mis2"> Miscellaneous2</h3>
+      </header>
+
+        <div class = "MisRow2" data-label = "Napkins">
+        <label class = "Miscellaneous2"> Napkins </label>
+        <div class = "Quantity"> 
+          <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+    
+      <div class = "MisRow2" data-label = "Straws Bags">
+        <label class="Miscellaneous2"> Straw Bags</label>
+        <div class ="Quantity">
+           <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <div class = "MisRow2" data-label = "A-Bags">
+        <label class="Miscellaneous2"> A-Bags</label>
+        <div class ="Quantity">
+           <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <div class = "MisRow2" data-label = "B-Bags">
+        <label class="Miscellaneous2"> B-Bags</label>
+        <div class ="Quantity">
+           <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+
+      <div class = "MisRow2" data-label = "C-Bags">
+        <label class="Miscellaneous2"> C-bags</label>
+        <div class ="Quantity">
+           <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+    
+
+       <!-- Buttons -->
+      <button class="submitBtn">Submit list</button>
+      <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
+      <button class="updateBtn" style="display: none;">Update List</button>
+
+      <!-- Checklist will show here -->
+      <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
+      </div>
+
+
+   </div> <!---card-container-->
 
   <!-- JavaScript -->
   <script src="Script.js"></script>
