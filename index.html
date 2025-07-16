@@ -204,24 +204,32 @@
         <h3 Class = "Mis2"> Miscellaneous2</h3>
       </header>
 
-        <div class = "MisRow2" data-label = "Napkins">
-        <label class = "Miscellaneous2"> Napkins </label>
-        <div class = "Quantity"> 
-          <button type="button">-</button>
-          <input type="number" value="0" min="0" />
-          <button type="button">+</button>
-        </div>
-      </div>
-    
-      <div class = "MisRow2" data-label = "Straws Bags">
-        <label class="Miscellaneous2"> Straw Bags</label>
-        <div class ="Quantity">
-           <button type="button">-</button>
-          <input type="number" value="0" min="0" />
-          <button type="button">+</button>
-        </div>
-      </div>
 
+
+  <!-- First row -->
+  <div class="RowGroup">
+    <div class="MisRow2" data-label="Napkins">
+      <label class="Miscellaneous2"> Napkins </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    <div class="MisRow2" data-label="Straw Bags">
+      <label class="Miscellaneous2"> Straw Bags </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+  </div><!--End of First Row-->
+
+
+  <!---Second Row-->
+  <div class =RowGroup>
       <div class = "MisRow2" data-label = "A-Bags">
         <label class="Miscellaneous2"> A-Bags</label>
         <div class ="Quantity">
@@ -230,6 +238,7 @@
           <button type="button">+</button>
         </div>
       </div>
+   
 
       <div class = "MisRow2" data-label = "B-Bags">
         <label class="Miscellaneous2"> B-Bags</label>
@@ -239,7 +248,9 @@
           <button type="button">+</button>
         </div>
       </div>
+ </div> <!--End of Second Row -->
 
+    <div class = "RowGroup">
       <div class = "MisRow2" data-label = "C-Bags">
         <label class="Miscellaneous2"> C-bags</label>
         <div class ="Quantity">
@@ -248,7 +259,16 @@
           <button type="button">+</button>
         </div>
       </div>
-    
+
+       <div class = "MisRow2" data-label = "Salad-Bags">
+        <label class="Miscellaneous2"> Salad-Bags</label>
+        <div class ="Quantity">
+           <button type="button">-</button>
+          <input type="number" value="0" min="0" />
+          <button type="button">+</button>
+        </div>
+      </div>
+    </div>
 
        <!-- Buttons -->
       <button class="submitBtn">Submit list</button>
@@ -259,8 +279,73 @@
       <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
       </div>
 
+   <!--inside the same card-container -->
+  <div class="Card5" id="stockForm5"> 
+    <header>
+      <h3 class="Fry">Fry-boxes/Hashbrown-bag</h3>   
+    </header>
 
-   </div> <!---card-container-->
+     <div class="FryRow" data-label="Hash sleeve">
+      <label class="Fry">Hash sleeve</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    
+     <div class="FryRow" data-label="Baby fry sleeve">
+      <label class="Fry">Baby fry sleeve</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    
+
+    <div class="FryRow" data-label="Smll fry sleeve">
+      <label class="Fry">Smll fry sleeve</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+     </div>
+    </div>
+
+    <div class="FryRow" data-label="Med fry sleeve">
+      <label class="Fry">Med fry sleeve</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+     <div class="FryRow" data-label="Lrg fry sleeve">
+      <label class="Fry">Lrg fry sleeve</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button class="submitBtn">Submit list</button>
+    <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
+    <button class="updateBtn" style="display: none;">Update List</button>
+
+  <!-- Checklist -->
+    <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
+    </div>
+
+ 
+ 
+  </div> <!--End of card-container-->
+
 
   <!-- JavaScript -->
   <script src="Script.js"></script>

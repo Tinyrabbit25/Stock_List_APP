@@ -13,7 +13,7 @@ h1 {
   font-family: 'Bangers', cursive;
 }
 
-.Card, .Card2, .Card3, .Card4 {
+.Card, .Card2, .Card3, .Card5 {
   display: flex;
   flex-direction: column;
   border: 3px solid var(--main-color);
@@ -26,7 +26,38 @@ h1 {
   box-shadow: 2px 2px 12px rgba(0,0,0,0.15);  
 }
 
-.Card h3, .Card2 h3, .Card3 h3, .Card4 h3{
+.Card4{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--main-color);
+  border-radius: 10px;
+  padding: 16px;
+  max-width: 440px;
+  min-height: 200px;
+  margin: 1px;
+  background: linear-gradient(to bottom, #FFC72C, #FFD84D);
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.15);  
+}
+
+
+.RowGroup { /* Controls Card 4 styling */
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.RowGroup .MisRow2 { /* Controls Card 4 styling */
+  flex: 1;
+  min-width: 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.Card h3, .Card2 h3, .Card3 h3, .Card4 h3, .Card5 h3{
   font-size: 20px;
   color: var(--third-color);
   text-align: center;
@@ -36,7 +67,8 @@ h1 {
 .SyrupRow,
 .MixesRow,
 .MisRow,
-.MisRow2 {
+.MisRow2,
+.FryRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,7 +78,9 @@ h1 {
 .Syrup,
 .Mixes,
 .Miscellaneous,
-.Miscellaneous2{
+.Miscellaneous2,
+.P,
+.Fry{
   font-size: 18px;
   font-weight: 100;
   display: flex;
@@ -177,7 +211,7 @@ input[type=number]::-webkit-inner-spin-button {
 .card-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 6.8rem;
   justify-content: left;
 }
 
@@ -232,4 +266,3 @@ input[type=number]::-webkit-inner-spin-button {
     transform: rotate(360deg);
   }
 }
-
