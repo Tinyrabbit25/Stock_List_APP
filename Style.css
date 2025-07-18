@@ -13,7 +13,7 @@ h1 {
   font-family: 'Bangers', cursive;
 }
 
-.Card, .Card2, .Card3, .Card5, .Card6 {
+.Card, .Card2, .Card3, .Card5, .Card6, .Card7 {
   display: flex;
   flex-direction: column;
   border: 3px solid var(--main-color);
@@ -39,8 +39,21 @@ h1 {
   box-shadow: 2px 2px 12px rgba(0,0,0,0.15);  
 }
 
+.Card8 {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--main-color);
+  border-radius: 10px;
+  padding: 16px;
+  max-width: 363px;
+  min-height: 200px;
+  margin: 1px;
+  background: linear-gradient(to bottom, #FFC72C, #FFD84D);
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.15);  
+  transform: translateX(-25px);
+}
 
-.RowGroup { /* Controls Card 4 styling */
+.RowGroup, .RowGroup2 { /* Controls Card 4 and 8 styling */
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -48,7 +61,7 @@ h1 {
   flex-wrap: wrap;
 }
 
-.RowGroup .MisRow2 { /* Controls Card 4 styling */
+.RowGroup, .RowGroup2, .MisRow2, .CaseRow{ /* Controls Card 4 and 8 styling */
   flex: 1;
   min-width: 140px;
   display: flex;
@@ -57,7 +70,7 @@ h1 {
 }
 
 
-.Card h3, .Card2 h3, .Card3 h3, .Card4 h3, .Card5 h3, .Card6 h3 {
+.Card h3, .Card2 h3, .Card3 h3, .Card4 h3, .Card5 h3, .Card6 h3, .Card7 h3, .Card8 h3 {
   font-size: 20px;
   color: var(--third-color);
   text-align: center;
@@ -69,7 +82,9 @@ h1 {
 .MisRow,
 .MisRow2,
 .FryRow,
-.ShakesRow {
+.ShakesRow,
+.BevRow,
+.CaseRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -82,7 +97,9 @@ h1 {
 .Miscellaneous2,
 .P,
 .Fry,
-.Shakes {
+.Shakes,
+.Bev,
+.Cases {
   font-size: 18px;
   font-weight: 100;
   display: flex;
