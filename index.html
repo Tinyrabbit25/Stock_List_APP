@@ -94,7 +94,7 @@
     <!------Mixes Card-------->
     <div class="Card2" id="Stockform2">
       <header>
-        <h3 class="M"> Mixes (F,S) </h3>
+        <h3 class="M"> Mixes (Frappe,Smoothie) </h3>
       </header>
 
       <!-- Mocha Mix -->
@@ -203,8 +203,6 @@
         <h3 class = "Mis2"> Miscellaneous2</h3>
       </header>
 
-
-
   <!-- First row -->
   <div class="RowGroup">
     <div class="MisRow2" data-label="Napkins">
@@ -228,7 +226,7 @@
 
 
   <!---Second Row-->
-  <div class =RowGroup>
+  <div class ="RowGroup">
       <div class = "MisRow2" data-label = "A-Bags">
         <label class="Miscellaneous2"> A-Bags</label>
         <div class ="Quantity">
@@ -281,7 +279,7 @@
    <!--inside the same card-container -->
   <div class="Card5" id="stockform5"> 
     <header>
-      <h3 class ="Fry">Fry-boxes/Hashbrown-bag</h3>   
+      <h3 class ="F">Fry-boxes/Hashbrown-bag/Uber-Bags</h3>   
     </header>
 
      <div class="FryRow" data-label="Hash sleeve">
@@ -332,6 +330,26 @@
       </div>
     </div>
 
+     <div class="FryRow" data-label="Big-Uber-Bag">
+      <label class="Fry">Big-Uber-Bag</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type="button">+</button>
+      </div>
+    </div>
+
+     <div class="FryRow" data-label="Smll-Uber-Bag">
+      <label class="Fry">Smll-Uber-Bag</label>
+      <div class="Quantity"> 
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+
+
     <!-- Buttons -->
     <button class="submitBtn">Submit list</button>
     <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
@@ -341,9 +359,9 @@
     <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
     </div>
 
- <div class="Card6" id="stockform6"> 
+  <div class="Card6" id="stockform6"> 
     <header>
-      <h3 class="Shakes">Shakes/Mix-Ins</h3>   
+      <h3 class="Sh">Shakes/Mix-Ins</h3>   
     </header>
 
     <div class ="ShakesRow" data-label="Choc-Shake-Mix">
@@ -366,6 +384,15 @@
 
      <div class ="ShakesRow" data-label="Straw-Shake-Mix">
       <label class ="Shakes"> Straw-Shake-Mix </label>
+      <div class="Quantity">
+        <button type = "button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type ="button">+</button> 
+      </div>
+    </div>
+
+      <div class ="ShakesRow" data-label="Shake-Mix">
+      <label class ="Shakes"> Shake-Mix </label>
       <div class="Quantity">
         <button type = "button">-</button>
         <input type="number" value="0" min="0"/>
@@ -409,10 +436,210 @@
     <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
   </div>
 
-  </div> <!--End of card-container-->
+  <div class="Card7" id="stockform7"> 
+    <header>
+      <h3 class="B">Beverage-Ingredients/Drinks</h3>   
+    </header>
 
+    <div class ="BevRow" data-label ="Expresso-Beans">
+    <label class = "Bev"> Expresso-Beans </label>
+    <div class="Quantity">
+        <button type ="button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type ="button">+</button> 
+     </div>  
+   </div>
+
+    <div class ="BevRow" data-label ="Choc-Drizzle">
+    <label class = "Bev"> Choc-Drizzle </label>
+    <div class="Quantity">
+        <button type = "button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type ="button">+</button> 
+     </div>  
+   </div>
+  
+   <div class ="BevRow" data-label ="Caramel-Drizzle">
+    <label class = "Bev"> Caramel-Drizzle</label>
+    <div class="Quantity">
+        <button type = "button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type ="button">+</button> 
+     </div>  
+   </div>
+
+   <div class ="BevRow" data-label ="Choc-Milk">
+    <label class = "Bev">Choc-Milk </label>
+    <div class="Quantity">
+        <button type = "button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type ="button">+</button> 
+     </div>  
+   </div>
+
+   <div class ="BevRow" data-label ="White-Milk">
+    <label class = "Bev"> White-Milk</label>
+    <div class="Quantity">
+        <button type = "button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type ="button">+</button> 
+     </div>  
+   </div>
+   
+    <div class ="BevRow" data-label ="Apple-Juice">
+    <label class = "Bev"> Apple-Juice</label>
+    <div class="Quantity">
+        <button type = "button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type ="button">+</button> 
+     </div>  
+   </div>
+
+   <div class ="BevRow" data-label ="Bottled-Water">
+    <label class = "Bev">Bottled-Water</label>
+    <div class="Quantity">
+        <button type = "button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type ="button">+</button> 
+     </div>  
+   </div>
+
+<!-- Buttons -->
+    <button class="submitBtn">Submit list</button>
+    <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
+    <button class="updateBtn" style="display: none;">Update List</button>
+
+  <!-- Checklist -->
+    <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
+    </div>
+
+    <div class = "Card8" id ="stockform8">
+      <header>
+        <h3 class="C"> Cases </h3>
+      </header>
+
+   <!-- First row -->
+  <div class="RowGroup2">
+    <div class="CaseRow" data-label="Milk">
+      <label class="Cases"> Milk-Case </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    <div class="CaseRow" data-label="Whipped-Cream">
+      <label class="Cases">Whipped-Cream-Case </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type="button">+</button>
+      </div>
+    </div> 
+  </div> <!--End of First Row-->
+
+    <!-- Second row -->
+  <div class="RowGroup2">
+    <div class="CaseRow" data-label="Milk">
+      <label class="Cases">Bulk-Cream-Case</label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    <div class="CaseRow" data-label="Whipped-Cream">
+      <label class="Cases"> Premium-Coffee-Case </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type="button">+</button>
+      </div>
+    </div> 
+  </div> <!--End of Second Row-->
+
+    <!-- Second row -->
+  <div class="RowGroup2">
+    <div class="CaseRow" data-label="Iced-Coffee">
+      <label class="Cases">Iced-Coffee-Case</label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    <div class="CaseRow" data-label="Butter-Case">
+      <label class="Cases"> Butter-Case </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type="button">+</button>
+      </div>
+    </div> 
+  </div> <!--End of Second Row-->
+
+  <!-- Third row -->
+  <div class="RowGroup2">
+    <div class="CaseRow" data-label="Two-Hole-Carriers">
+      <label class="Cases">Two-Hole-Carriers</label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    <div class="CaseRow" data-label="4-Hole-Carriers">
+      <label class="Cases"> 4-Hole-Carrriers </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type="button">+</button>
+      </div>
+    </div> 
+  </div> <!--End of Third Row-->
+  
+   <!-- Fourth row -->
+  <div class="RowGroup2">
+    <div class="CaseRow" data-label="Creamer-Packet-Case">
+      <label class="Cases">Creamer-Packet-Case</label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
+
+    <div class="CaseRow" data-label="Apple-Slices">
+      <label class="Cases">Apple-Slices-Case </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type="button">+</button>
+      </div>
+    </div> 
+  </div> <!--End of Fourth Row-->
+  
+
+
+
+    <!-- Buttons -->
+    <button class="submitBtn">Submit list</button>
+    <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
+    <button class="updateBtn" style="display: none;">Update List</button>
+
+     <!-- Checklist -->
+    <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
+
+</div> <!--End of Card8-->
+  
+
+</div> <!--End of card-container-->
 
   <!-- JavaScript -->
-  <script src="Script.js"></script>
+<script src="Script.js"></script>
 </body>
 </html>
