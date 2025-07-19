@@ -96,3 +96,40 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.getElementById('masterSubmitBtn').addEventListener('click', () => {
+  const allItems = [];
+
+  const itemRows = document.querySelectorAll('[data-label]');
+
+  itemRows.forEach(row => {
+    const label = row.getAttribute('data-label');
+    const quantityInput = row.querySelector('input[type="number"]');
+    const quantity = parseInt(quantityInput.value) || 0;
+
+    if (quantity > 0) {
+      allItems.push({ label, quantity });
+    }
+  });
+
+  localStorage.setItem('masterChecklist', JSON.stringify(allItems));
+
+  // Navigate to second page
+  window.location.href = "checklist.html";
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedList = JSON.parse(localStorage.getItem("masterChecklist"));
+  if (!savedList) return;
+
+  savedList.forEach(item => {
+    const row = document.querySelector(`[data-label="${item.label}"]`);
+    if (row) {
+      const quantityInput = row.querySelector('input[type="number"]');
+      if (quantityInput) {
+        quantityInput.value = item.quantity;
+      }
+    }
+  });
+});
+
+

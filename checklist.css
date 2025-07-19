@@ -1,0 +1,90 @@
+:root{
+  --text-color: #FFC72C;
+  --main-color: #DA291C;
+  --secondary-color: #4B57DB;
+  --third-color: #654321;
+}
+
+
+body{
+    font-family: sans-serif;
+    padding: 20px;
+    background:  #f9f9f9;
+}
+
+h1 {
+  font-weight: 2000;
+  font-size: 26px;
+  text-align: center;
+  text-decoration: underline;
+  font-family: 'Bangers', cursive;
+  margin-top: auto;  
+}
+
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    margin-bottom: 12px;
+}
+label{
+    cursor: pointer;
+    user-select: none;
+    color: #999;
+}
+
+#masterChecklist {
+  list-style: none;
+  padding-left: 0;
+}
+
+#masterChecklist li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+#masterChecklist label {
+  color: #333;
+  cursor: pointer;
+}
+
+#masterChecklist input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.3);
+}
+
+#masterChecklist input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  background-image: url('fries-bw.png'); /* black & white fries */
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: background-image 0.3s ease-in-out, transform 0.2s;
+}
+
+#masterChecklist input[type="checkbox"]:checked {
+  background-image: url('fries-color.png');  /* full color fries */
+}
+
+
+
+#backBtn{
+    font-family: sans-serif;
+    padding: 10px;
+    background:  #f9f9f9;
+    background-color: gray;
+}
+
+#backBtn:hover{
+  background-color: var(--text-color);
+  color: var(--main-color);
+  transition: 0.3s ease-in-out;
+  transform: scale(1.2);
+}

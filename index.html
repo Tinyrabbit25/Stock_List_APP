@@ -624,7 +624,27 @@
   </div> <!--End of Fourth Row-->
   
 
+   <!-- Fifth row -->
+  <div class="RowGroup2">
+    <div class="CaseRow" data-label="Creamer-Packet-Case">
+      <label class="Cases">Orange-Juice-Case</label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0" />
+        <button type="button">+</button>
+      </div>
+    </div>
 
+    <div class="CaseRow" data-label="Apple-Slices">
+      <label class="Cases">Lemonade-Case </label>
+      <div class="Quantity">
+        <button type="button">-</button>
+        <input type="number" value="0" min="0"/>
+        <button type="button">+</button>
+      </div>
+    </div> 
+  </div> <!--End of Fifth Row-->
+  
 
     <!-- Buttons -->
     <button class="submitBtn">Submit list</button>
@@ -652,9 +672,7 @@
  
 
 
-    
-
-
+        
        <!-- Buttons -->
     <button class="submitBtn">Submit list</button>
     <button class="refreshBtn" style="margin-top: 6px;">Refresh list</button>
@@ -664,6 +682,13 @@
     <ul class="checklist" style="display:none; margin-top: 20px; list-style: none; padding-left: 0;"></ul>
 
 </div> <!--End of card-container-->
+
+<!-- Master Submit Button -->
+  <div style="text-align:center; margin: 30px 0;">
+    <button id="masterSubmitBtn" style="padding: 12px 24px; font-size: 16px; background-color: var(--text-color);  border: none; border-radius: 8px; cursor: pointer;">
+     Master Submit Full List
+    </button>
+  </div>
 
   <!-- JavaScript -->
 <script src="Script.js"></script>
