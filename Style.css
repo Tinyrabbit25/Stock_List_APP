@@ -13,7 +13,12 @@ h1 {
   font-family: 'Bangers', cursive;
 }
 
-.Card, .Card2, .Card3, .Card5, .Card6, .Card7 {
+body {
+  overflow-y: auto;
+}
+
+
+.Card, .Card2, .Card3, .Card5, .Card6, .Card7{
   display: flex;
   flex-direction: column;
   border: 3px solid var(--main-color);
@@ -53,6 +58,36 @@ h1 {
   transform: translateX(-25px);
 }
 
+.Card9{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--main-color);
+  border-radius: 10px;
+  padding: 16px;
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(to bottom, #FFC72C, #FFD84D);
+  box-shadow: 2px 2px 12px rgba(0,0,0,0.15);  
+}
+
+.ItemRow{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ItemRow label {
+  margin-right: 4px;
+}
+
+.itemRow input[type="number"]{
+  width: 50px;
+  text-align: center;
+}
+
+
 .RowGroup, .RowGroup2 { /* Controls Card 4 and 8 styling */
   display: flex;
   justify-content: space-between;
@@ -70,7 +105,7 @@ h1 {
 }
 
 
-.Card h3, .Card2 h3, .Card3 h3, .Card4 h3, .Card5 h3, .Card6 h3, .Card7 h3, .Card8 h3 {
+.Card h3, .Card2 h3, .Card3 h3, .Card4 h3, .Card5 h3, .Card6 h3, .Card7 h3, .Card8 h3, .Card9 h3 {
   font-size: 20px;
   color: var(--third-color);
   text-align: center;
