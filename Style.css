@@ -104,6 +104,13 @@ body {
   align-items: center;
 }
 
+.RowGroup3,.RowGroup4, .RowGroup5, .RowGroup6, .RowGroup7{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 12px;
+  margin: auto;
+}
+
 
 .Card h3, .Card2 h3, .Card3 h3, .Card4 h3, .Card5 h3, .Card6 h3, .Card7 h3, .Card8 h3, .Card9 h3 {
   font-size: 20px;
@@ -119,7 +126,8 @@ body {
 .FryRow,
 .ShakesRow,
 .BevRow,
-.CaseRow {
+.CaseRow,
+.ItemRow {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -134,7 +142,12 @@ body {
 .Fry,
 .Shakes,
 .Bev,
-.Cases {
+.Cases,
+.Cups,
+.Lids,
+.HotC,
+.LidsH,
+.Oat {
   font-size: 18px;
   font-weight: 100;
   display: flex;
@@ -322,6 +335,13 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 #masterSubmitBtn:hover{
+  background-color: var(--text-color);
+  color: var(--main-color);
+  transition: 0.3s ease-in-out;
+  transform: scale(0.9);
+}
+
+.refreshBtnn:hover {
   background-color: var(--text-color);
   color: var(--main-color);
   transition: 0.3s ease-in-out;

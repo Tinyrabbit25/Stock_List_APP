@@ -73,7 +73,14 @@ label{
   background-image: url('fries-color.png');  /* full color fries */
 }
 
-
+#masterChecklist {
+  column-count: 3; /* increase this number for more columns */
+  column-gap: 20px; /* Optional: spacing between columns */
+  list-style: none;
+  padding: 0;
+  max-height: 80vh; /* Optional: limit height */
+  overflow-y: auto; 
+}
 
 #backBtn{
     font-family: sans-serif;
@@ -87,4 +94,56 @@ label{
   color: var(--main-color);
   transition: 0.3s ease-in-out;
   transform: scale(1.2);
+}
+
+.confetti-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* so clicks pass through */
+  overflow: hidden;
+  z-index: 0; /* behind your cards */
+}
+
+.confetti {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: var(--main-color); /* McD red */
+  opacity: 0.8;
+  top: -10px;
+  animation-name: fall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  border-radius: 2px;
+  filter: drop-shadow(0 0 1px rgba(0,0,0,0.2));
+}
+
+/* create different colors like red, yellow, white */
+.confetti:nth-child(2n) { background-color: var(--text-color); } /* yellow */
+.confetti:nth-child(3n) { background-color: white; }
+
+/* random horizontal start and different animation duration */
+.confetti:nth-child(1) { left: 5%; animation-duration: 5s; animation-delay: 0s; }
+.confetti:nth-child(2) { left: 15%; animation-duration: 7s; animation-delay: 1s; }
+.confetti:nth-child(3) { left: 25%; animation-duration: 6s; animation-delay: 0.5s; }
+.confetti:nth-child(4) { left: 35%; animation-duration: 8s; animation-delay: 1.5s; }
+.confetti:nth-child(5) { left: 45%; animation-duration: 4s; animation-delay: 0.3s; }
+.confetti:nth-child(6) { left: 55%; animation-duration: 6.5s; animation-delay: 1.3s; }
+.confetti:nth-child(7) { left: 65%; animation-duration: 7.2s; animation-delay: 0.7s; }
+.confetti:nth-child(8) { left: 75%; animation-duration: 5.5s; animation-delay: 1.7s; }
+.confetti:nth-child(9) { left: 85%; animation-duration: 6.8s; animation-delay: 1.1s; }
+.confetti:nth-child(10) { left: 95%; animation-duration: 7.5s; animation-delay: 0.9s; }
+
+@keyframes fall {
+  0% {
+    top: -10px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 110vh;
+    transform: rotate(360deg);
+  }
 }
