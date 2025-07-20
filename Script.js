@@ -132,4 +132,38 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+  const allInputs = document.querySelectorAll('[data-label] input[type="number"]');
+
+  allInputs.forEach(input => {
+    input.addEventListener("input", () => {
+      const updatedList = [];
+
+      document.querySelectorAll('[data-label]').forEach(row => {
+        const label = row.getAttribute("data-label");
+        const quantity = parseInt(row.querySelector("input").value) || 0;
+        if (quantity > 0) {
+          updatedList.push({ label, quantity });
+        }
+      });
+
+      localStorage.setItem("masterChecklist", JSON.stringify(updatedList));
+    });
+  });
+});
+
+document.getElementById("globalRefreshBtn").addEventListener("click", () => {
+  const allQuantityInputs = document.querySelectorAll('[data-label] input[type="number"]');
+  allQuantityInputs.forEach(input => {
+    input.value = 0;
+  });
+
+  // Also clear localStorage if you want it to be a full reset:
+  localStorage.removeItem("masterChecklist");
+});
+
+
+
+
+
 

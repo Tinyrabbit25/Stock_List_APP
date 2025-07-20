@@ -31,3 +31,6 @@
     document.getElementById("backBtn").addEventListener("click", () => {
   window.location.href = "index.html"; // or the correct filename of your main stock list page
 });
+
+
+
