@@ -9,7 +9,6 @@
 body{
     font-family: sans-serif;
     padding: 20px;
-    background:  #f9f9f9;
 }
 
 h1 {
@@ -145,5 +144,26 @@ label{
   100% {
     top: 110vh;
     transform: rotate(360deg);
+  }
+}
+
+/* Make checklist readable and bigger on mobile */
+@media (max-width: 600px) {
+  #masterChecklist {
+    column-count: 1;
+    max-width: 95vw;
+    gap: 12px;
+  }
+  #masterChecklist li {
+    font-size: 1.2em;    /* Bigger font for mobile */
+    min-width: 0;
+    max-width: 100%;
+    padding: 14px 10px;
+    margin-bottom: 12px;
+    text-align: left;
+    word-break: break-word;
+  }
+  #masterChecklist label {
+    font-size: 1.1em;
   }
 }
