@@ -373,3 +373,52 @@ input[type=number]::-webkit-inner-spin-button {
   transition: 0.3s ease-in-out;
   transform: scale(0.9);
 }
+
+/* Make card and its contents responsive on mobile */
+@media (max-width: 600px) {
+  .Card4,.Card7, .Card8, .Card9 { /* Add all your card classes */
+    max-width: 98vw;
+    width: 98vw;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0 auto;
+    overflow-x: auto;
+  }
+
+  .Quantity {
+    display: flex;
+    flex-wrap: nowrap; /* Keep buttons/input in a row */
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .Quantity input[type="number"] {
+    width: 40px;
+    min-width: 0;
+    font-size: 1em;
+    text-align: center;
+  }
+
+  .Quantity button {
+    font-size: 1.1em;
+    padding: 6px 10px;
+    min-width: 32px;
+  }
+
+  .CaseRow, .ItemRow {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .Cases, .Cups {
+    font-size: 1.1em;
+    text-align: center;
+    margin-bottom: 4px;
+    word-break: break-word;
+  }
+}
